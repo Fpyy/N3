@@ -1,0 +1,75 @@
+/* MOBILE FIRST = começa pelo celular */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+/* 🌙 modo escuro */
+body.dark {
+    background-color: #020617;
+    color: #f1f5f9;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: px;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+
+.container {
+display: flex; 
+align-items: flex-start; 
+}
+img {
+width: 150px;
+height: auto;
+margin-right: 10px; 
+}
+
+
+img {
+
+display: block;
+margin: auto;
+width: 55%;
+}
+
+/* Conteúdo */
+main {
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4f3cf8; /* efeito ao passar o mouse */
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
