@@ -1,40 +1,49 @@
 /* MOBILE FIRST = começa pelo celular */
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* mais fino */
+    font-size: 18px;  /* um pouco maior */
     margin: 0;
-    background-color: #f1f5f9;
-    color: #0f172a;
+    background-color: aliceblue;
+    color: #474747;
 }
 
 /* 🌙 modo escuro */
 body.dark {
-    background-color: #020617;
+    background-color: #020617;  
     color: #f1f5f9;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: px;
+    padding: 40px 20px;
+    background-color: #F1F5F9;
+    color: #00609C;
 }
-
-/* Menu */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-}
-
 
 .container {
-display: flex; 
-align-items: flex-start; 
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
-img {
-width: 150px;
-height: auto;
-margin-right: 10px; 
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+h3 {
+    color: #00609C;
 }
 
 
@@ -47,17 +56,51 @@ width: 55%;
 
 /* Conteúdo */
 main {
-    padding: 15px;
+    padding: 15px;  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input,textarea,select, button{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccc;
+  width: 300px;
+  max-width: 600px;
+  align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+    color: aliceblue;
+    background-color: #003777;
+    position:sticky;
+    top: 0;
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: #e2e8f0;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    position: relative;
 }
 
 nav a:hover {
-    color: #4f3cf8; /* efeito ao passar o mouse */
+    color: #006DB2; /* efeito ao passar o mouse */
 }
 
 
